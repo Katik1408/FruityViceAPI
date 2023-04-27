@@ -32,7 +32,10 @@ namespace FruityviceWebAPI
             services.AddTransient<IFruityViceService, FruityViceService>();
 
             services.AddSwaggerGen();
-            services.AddHttpClient();
+            services.AddHttpClient("fruityvice", client =>
+            {
+                client.BaseAddress = new Uri("https://www.fruityvice.com");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

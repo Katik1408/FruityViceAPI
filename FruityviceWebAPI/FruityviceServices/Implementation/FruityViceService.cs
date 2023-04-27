@@ -14,12 +14,12 @@ namespace FruityviceServices.Implementation
     public class FruityViceService : IFruityViceService
     {
         private HttpClient _httpClient;
+        private readonly IHttpClientFactory httpClientFactory;
 
-        public FruityViceService(HttpClient httpClient)
+        public FruityViceService(IHttpClientFactory httpClientFactory)
         {
-            _httpClient = httpClient;
-            _httpClient.BaseAddress = new Uri("https://www.fruityvice.com");
-
+            this.httpClientFactory = httpClientFactory;
+            _httpClient = this.httpClientFactory.CreateClient("fruityvice");
         }
 
         public string AddNewFruitService(FruitDto Fruit)
@@ -49,7 +49,7 @@ namespace FruityviceServices.Implementation
         }
 
         public List<FruitDto> GetFruitsByGetFruitsByNutritionService(string nutrient, double min, double max)
-        {   
+        {
             string requestURI = ApiUrlConstants.Fruit + "/" + nutrient + $"?min={min}&max={max}";
             var data = _httpClient.GetAsync(requestURI).Result;
             return JsonConvert.DeserializeObject<List<FruitDto>>(data.Content.ReadAsStringAsync().Result);
