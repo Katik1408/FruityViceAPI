@@ -1,0 +1,10 @@
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\bin\Debug\netcoreapp3.1\FruityViceDataContracts.deps.json
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\bin\Debug\netcoreapp3.1\FruityViceDataContracts.dll
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\bin\Debug\netcoreapp3.1\FruityViceDataContracts.pdb
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.csproj.AssemblyReference.cache
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.AssemblyInfoInputs.cache
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.AssemblyInfo.cs
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.csproj.CoreCompileInputs.cache
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.dll
+D:\Fruityvice\FruityviceWebAPI\FruityViceDataContracts\obj\Debug\netcoreapp3.1\FruityViceDataContracts.pdb
