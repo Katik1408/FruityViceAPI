@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1oYY3ZKba0n2J9/r9tSMG3dYWubanENey6JFutMVeP03d1iM/STqSmQgN0uNymDXIwt9Qzuzr5xLIMkXHp2BEA==",
+  "dgSpecHash": "UPlJaamQNZLdj+ZIYxG2H0VgMeUvDi8cveIzlzZ7hu7+5nWJYmD7Q+LV7w7lp4SfKtIjTt17P7JNh+2RF0BKoA==",
   "success": true,
   "projectFilePath": "D:\\Fruityvice\\FruityviceWebAPI\\FruityViceDataContracts\\FruityViceDataContracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\admin-karthiks\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

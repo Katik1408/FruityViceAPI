@@ -14,12 +14,11 @@ namespace Fruityvice.Tests
     {
         public readonly FruityViceController _controller;
         public readonly IFruityViceService _service;
-        public readonly HttpClient _httpClient;
+        public readonly IHttpClientFactory _httpClientFactory;
         public FruityViceControllerTest()
         {
-            _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://www.fruityvice.com");
-            _service = new FruityViceService(_httpClient);
+
+            _service = new FruityViceService(_httpClientFactory);
             _controller = new FruityViceController(_service);
         }
 

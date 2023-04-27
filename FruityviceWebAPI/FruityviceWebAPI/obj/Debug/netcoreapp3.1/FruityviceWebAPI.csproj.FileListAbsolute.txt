@@ -17,7 +17,6 @@ D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\Fruityvi
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\FruityviceWebAPI.AssemblyInfoInputs.cache
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\FruityviceWebAPI.AssemblyInfo.cs
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\FruityviceWebAPI.csproj.CoreCompileInputs.cache
-D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\FruityviceWebAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\FruityviceWebAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\FruityviceWebAPI.StaticWebAssets.Manifest.cache
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\FruityviceWebAPI.StaticWebAssets.Pack.cache
@@ -42,3 +41,4 @@ D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\bin\Debug\netcoreapp3.1\System.R
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\bin\Debug\netcoreapp3.1\FruityviceServices.dll
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\bin\Debug\netcoreapp3.1\FruityviceServices.pdb
 D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Fruityvice\FruityviceWebAPI\FruityviceWebAPI\obj\Debug\netcoreapp3.1\FruityviceWebAPI.MvcApplicationPartsAssemblyInfo.cs

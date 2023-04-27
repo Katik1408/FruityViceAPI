@@ -34,7 +34,7 @@ namespace FruityviceWebAPI
             services.AddSwaggerGen();
             services.AddHttpClient("fruityvice", client =>
             {
-                client.BaseAddress = new Uri("https://www.fruityvice.com");
+                client.BaseAddress = new Uri(Configuration["APIUrl:FruityVice"]);
             });
         }
 

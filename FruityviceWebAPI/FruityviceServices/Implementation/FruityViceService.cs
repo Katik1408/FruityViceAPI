@@ -27,7 +27,9 @@ namespace FruityviceServices.Implementation
             var data = JsonConvert.SerializeObject(Fruit);
             var content = new StringContent(data, UnicodeEncoding.UTF8, "application/json");
             var result = _httpClient.PutAsync(ApiUrlConstants.Fruit, content);
-            return result.ToString();
+            var response = result.Result.Content.ReadAsStringAsync().Result;
+
+            return response;
         }
 
         public List<FruitDto> GetAllFruitsService()
@@ -39,27 +41,95 @@ namespace FruityviceServices.Implementation
         public List<FruitDto> GetFruitsByFamilyService(string family)
         {
             var data = _httpClient.GetAsync(ApiUrlConstants.FruitsByFamily + "/" + family).Result;
-            return JsonConvert.DeserializeObject<List<FruitDto>>(data.Content.ReadAsStringAsync().Result);
+            var resposne = data.Content.ReadAsStringAsync().Result;
+
+            if (!resposne.Contains("error"))
+            {
+                return JsonConvert.DeserializeObject<List<FruitDto>>(resposne);
+
+            }
+            else
+            {
+                return new List<FruitDto>()
+                {
+                    new FruitDto()
+                    {
+                        family= family,
+                    }
+                };
+            }
         }
 
         public List<FruitDto> GetFruitsByGenusService(string genus)
         {
             var data = _httpClient.GetAsync(ApiUrlConstants.FruitsByGenus + "/" + genus).Result;
-            return JsonConvert.DeserializeObject<List<FruitDto>>(data.Content.ReadAsStringAsync().Result);
+            var resposne = data.Content.ReadAsStringAsync().Result;
+
+            if (!resposne.Contains("error"))
+            {
+                return JsonConvert.DeserializeObject<List<FruitDto>>(resposne);
+
+            }
+            else
+            {
+                return new List<FruitDto>()
+                {
+                    new FruitDto()
+                    {
+                        genus= genus,
+                    }
+                };
+            }
+
         }
 
         public List<FruitDto> GetFruitsByGetFruitsByNutritionService(string nutrient, double min, double max)
         {
             string requestURI = ApiUrlConstants.Fruit + "/" + nutrient + $"?min={min}&max={max}";
             var data = _httpClient.GetAsync(requestURI).Result;
-            return JsonConvert.DeserializeObject<List<FruitDto>>(data.Content.ReadAsStringAsync().Result);
+            var resposne = data.Content.ReadAsStringAsync().Result;
+
+            if (!resposne.Contains("error"))
+            {
+                return JsonConvert.DeserializeObject<List<FruitDto>>(resposne);
+
+            }
+            else
+            {
+                return new List<FruitDto>()
+                {
+                    new FruitDto()
+                    {
+                        nutritions=
+                        {
+
+                        }
+                    }
+                };
+            }
 
         }
 
         public List<FruitDto> GetFruitsByOrderService(string order)
         {
             var data = _httpClient.GetAsync(ApiUrlConstants.FruitsByOrder + "/" + order).Result;
-            return JsonConvert.DeserializeObject<List<FruitDto>>(data.Content.ReadAsStringAsync().Result);
+            var resposne = data.Content.ReadAsStringAsync().Result;
+
+            if (!resposne.Contains("error"))
+            {
+                return JsonConvert.DeserializeObject<List<FruitDto>>(resposne);
+
+            }
+            else
+            {
+                return new List<FruitDto>()
+                {
+                    new FruitDto()
+                    {
+                        order= order,
+                    }
+                };
+            }
 
         }
     }
